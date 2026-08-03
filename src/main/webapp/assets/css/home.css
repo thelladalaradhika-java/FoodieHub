@@ -1,0 +1,220 @@
+/* ==========================================================================
+   PRODUCTION CSS SYSTEM SPECIFICATION: PREMIUM HOMEPAGE DEFINITION
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #1e293b;
+}
+
+.app-viewport-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 1. PREMIUM LUNCH/DINNER BILLBOARD */
+.premium-billboard-hero {
+    width: 100%;
+    height: 260px;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.6) 100%), 
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200');
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.billboard-badge {
+    background: #fc8019;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 50px;
+    width: fit-content;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.premium-billboard-hero h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.premium-billboard-hero p {
+    font-size: 15px;
+    opacity: 0.9;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+/* 2. CATEGORY HORIZONTAL LAYOUTS */
+.scrollway-title-row {
+    margin-bottom: 16px;
+}
+
+.scrollway-heading {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.horizontal-flex-scrollway {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+    overflow-x: auto;
+    margin-bottom: 40px;
+    scrollbar-width: none;
+}
+
+.horizontal-flex-scrollway::-webkit-scrollbar {
+    display: none;
+}
+
+.category-item-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.avatar-frame {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    margin-bottom: 8px;
+    border: 1px solid #f1f5f9;
+    transition: transform 0.2s ease;
+}
+
+.category-item-node:hover .avatar-frame {
+    transform: scale(1.05);
+}
+
+.avatar-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.node-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* 3. SEARCH CONTAINER UTILITIES */
+.search-deck-container {
+    max-width: 650px;
+    margin: 0 auto 50px auto;
+}
+
+.search-flex-row {
+    display: flex;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 5px 6px 5px 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.search-flex-row input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #0f172a;
+}
+
+.search-submit-action {
+    background: #fc8019;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s ease;
+}
+
+.search-submit-action:hover {
+    background: #e56f10;
+}
+
+/* 4. ANTI-OVERLAP RESTAURANT MATRIX SYSTEM */
+.grid-header-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.restaurant-layout-matrix {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+    gap: 28px;
+    width: 100%;
+}
+
+.restaurant-commercial-tile {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.restaurant-commercial-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.06);
+}
+
+.tile-media-window {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    background-color: #e2e8f0;
+}
+
+.tile-media-window img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
