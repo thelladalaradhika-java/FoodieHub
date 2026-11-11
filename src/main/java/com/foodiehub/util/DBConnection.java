@@ -8,7 +8,7 @@ public class DBConnection {
     // Database configuration settings
     private static final String URL = "jdbc:mysql://localhost:3306/foodiehub_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String USER = "root";       // Change this if your MySQL username is different
-    private static final String PASSWORD = "Radhikamohan@02";   // Change this to your actual MySQL password
+    private static final String PASSWORD = "";   // Change this to your actual MySQL password
 
     // Static block to explicitly load the modern MySQL Driver
     static {
