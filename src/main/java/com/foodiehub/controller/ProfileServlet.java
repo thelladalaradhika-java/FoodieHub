@@ -33,7 +33,7 @@ public class ProfileServlet extends HttpServlet {
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/foodiehub_db";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "Radhikamohan@02";
+    private static final String DB_PASSWORD = "";
 
     // Helper to retrieve user ID from session
     private Integer getUserIdFromSession(HttpSession session) {
