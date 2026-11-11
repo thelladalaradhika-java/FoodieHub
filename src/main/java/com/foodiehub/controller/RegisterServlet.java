@@ -20,7 +20,7 @@ public class RegisterServlet extends HttpServlet {
     
     private static final String DB_URL = "jdbc:mysql://localhost:3306/foodiehub_db";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "Radhikamohan@02";
+    private static final String DB_PASSWORD = "";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
